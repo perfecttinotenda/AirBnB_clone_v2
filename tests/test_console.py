@@ -26,3 +26,5 @@ class test_console(unittest.TestCase):
         """
         con = self.create()
         self.assertTrue(con.onecmd("EOF"))
+
+        

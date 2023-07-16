@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""Tests for console
-   Code adjusted to fit prev class names & Def
-"""
+"""Test ye console"""
 
 import unittest
 import console
@@ -9,22 +7,20 @@ from console import HBNBCommand
 
 
 class test_console(unittest.TestCase):
-    """class_test console"""
+    """class ye console"""
 
     def create(self):
-        """create_instance"""
+        """creat3 intance"""
         return HBNBCommand()
 
     def test_quit(self):
-        """ test method to quit
+        """ test ye method quit
         """
         con = self.create()
         self.assertTrue(con.onecmd("quit"))
 
     def test_EOF(self):
-        """test method EQF
+        """test ye method EQF
         """
         con = self.create()
         self.assertTrue(con.onecmd("EOF"))
-
-        
